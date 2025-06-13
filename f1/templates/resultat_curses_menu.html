@@ -1,0 +1,7 @@
+Tria la lliga que vols visualitzar
+    <ul>
+    {% for cursa in curses %}
+    	<li><a href="/resultat_curses/{{cursa.id}}/">{{cursa}}</a></li>
+    {% endfor %}
+    </ul>
+

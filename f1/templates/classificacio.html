@@ -1,0 +1,8 @@
+    <h1>Classificació F1</h1>
+    <h2>Pilots:</h2>
+    <ol>
+    {% for pilot in classificacio %}
+    	<li>{{pilot.0}} ({{pilot.1}} punts)</li>
+    {% endfor %}
+    </ol>
+

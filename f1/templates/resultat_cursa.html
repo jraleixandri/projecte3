@@ -1,0 +1,10 @@
+    <h1>Resultat cursa</h1>
+    <h2>Cursa:</h2>
+    <ol>
+    {% i=1 %}
+    {% for pilot in cursa.resultats %}
+    	<li>{{i}}-{{pilot.0}} a {{pilot.1}}</li>
+    	{% i++ %}
+    {% endfor %}
+    </ol>
+

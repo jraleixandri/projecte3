@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resultats curses</title>
+</head>
+<body>
+<h1>Equips</h1>
+{% if latest_escuderies_list %}
+    <ul>
+    {% for escuderia in latest_escuderies_list %}
+        <li>{{ escuderia.nom }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hi ha escuderies.</p>
+{% endif %}
+
+</body>
+</html>
